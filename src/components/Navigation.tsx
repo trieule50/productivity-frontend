@@ -1,6 +1,8 @@
-import React from "react"
-import { Link } from 'react-router-dom';
+import React from "react";
+
 import { Divider, Drawer, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Toolbar } from "@mui/material";
+import { Link } from 'react-router-dom';
+
 import FlagIcon from '@mui/icons-material/Flag';
 import ListIcon from '@mui/icons-material/List';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
@@ -10,6 +12,7 @@ const drawerWidth = 240;
 
 function Navigation() {
     return(
+        <>
         <Drawer
             sx={{
             width: drawerWidth,
@@ -59,6 +62,7 @@ function Navigation() {
                 </ListItem>
             </List>
         </Drawer>
+      </>
     )
 }
 
