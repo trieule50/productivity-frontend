@@ -11,9 +11,9 @@ function App() {
   return (
     <>
       <Box sx={{ display: 'flex' }}>
-      <CssBaseline />
-      <TopNavigation/>
-      <Navigation />
+        <CssBaseline />
+        <TopNavigation/>
+        <Navigation />
       </Box>
     </>
   );
