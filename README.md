@@ -18,7 +18,7 @@ To get a local copy up and running follow these simple steps:
 
 ### Installation
 
-mARTvelous requires `npm` to run.
+TaskBuddy requires `npm` to run.
 
 1. Download the repo using git.
     ```
