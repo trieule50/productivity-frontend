@@ -1,15 +1,21 @@
-import React from 'react'
+import React from 'react';
+
+import { Box, CssBaseline } from '@mui/material';
+
 import './App.css';
-import { Box } from '@mui/material';
+
 import Navigation from './components/Navigation.tsx';
 import TopNavigation from './components/TopNavigation.tsx';
 
 function App() {
   return (
-    <Box sx={{ display: 'flex' }}>
-      <TopNavigation/>
-      <Navigation />
-    </Box>
+    <>
+      <Box sx={{ display: 'flex' }}>
+        <CssBaseline />
+        <TopNavigation/>
+        <Navigation />
+      </Box>
+    </>
   );
 }
 
