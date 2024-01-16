@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import App from './App.tsx';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom'
 
 const element = document.getElementById('root')
 if (element === null) throw new Error('Root container missing in index.html')
@@ -11,7 +12,9 @@ if (element === null) throw new Error('Root container missing in index.html')
 const root = ReactDOM.createRoot(element);
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );
 
