@@ -1,14 +1,20 @@
 import React from "react";
 
-import { AppBar, Toolbar, Typography } from "@mui/material";
+import { AppBar, Button, Toolbar, Typography } from "@mui/material";
+
+const drawerWidth = 240;
 
 function TopNavigation () {
     return(
-        <AppBar position="fixed" sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }}>
+        <AppBar
+        position="fixed"
+        sx={{ width: `calc(100% - ${drawerWidth}px)`, ml: `${drawerWidth}px` }}
+        >
         <Toolbar>
-          <Typography variant="h6" noWrap component="div">
+          <Typography variant="h6" noWrap component="div" sx={{ flexGrow: 1 }}>
             TaskBuddy
           </Typography>
+          <Button color="inherit">Login</Button>
         </Toolbar>
       </AppBar>
     )
